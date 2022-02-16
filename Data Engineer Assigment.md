@@ -111,7 +111,8 @@ Complexity: O(log(m+n))
 
 ### Q6 - Solution
 
-Explaination: Since the linked list is sorted. We move to the right of the list, and compare the adjacents node. If the adjacents node are same, then remove the second one.  
+Explaination:  
+Since the linked list is sorted. We move to the right of the list, and compare the adjacents node. If the adjacents node are same, then remove the second one.  
 ![image](https://user-images.githubusercontent.com/72053908/154193541-8ff2e8f4-f4ee-4856-803f-76356cdfc077.png)
 
 <pre>
