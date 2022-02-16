@@ -48,7 +48,7 @@ Sum of consecutive natural numbers formula : Sum = n(n+1)/2
 2. Subtract the values of elements in missing array from Sum we have calculated in step 1  
 
 <pre>
-def findMissingumber(arr, n):
+def findMissingnumber(arr, n):
     sum = n*(n+1)/2
     for i in range(len(arr)):
         sum = sum - arr[i]
