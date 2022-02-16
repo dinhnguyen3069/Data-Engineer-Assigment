@@ -11,7 +11,7 @@ FROM Performance
 WHERE Score = (Select Max(Score) FROM Performance)
 </pre>
 
-## Q2 - Solution
+### Q2 - Solution
 ![image](https://user-images.githubusercontent.com/72053908/154034776-8a092c68-d44b-47ca-bbe0-806d9b389e90.png)
 
 Write an SQL query to report all customers who never order anything:
@@ -22,7 +22,7 @@ FROM Customers
 WHERE id NOT IN (SELECT customerId FROM Orders);
 </pre>
 
-## Q3 - Solution
+### Q3 - Solution
 ![image](https://user-images.githubusercontent.com/72053908/154034335-c7be5187-fefe-4be9-8e6a-4bd363b9f322.png)
 
 Write an SQL query to find the employees who are high earners in each of the
@@ -36,7 +36,8 @@ WHERE 3 > (SELECT COUNT(DISTINCT e2.salary) FROM Employee e2 WHERE e1.department
 ORDER BY department DESC, salary DESC;  
 </pre>
 
-## Q4 - Solution
+## Coding questions
+### Q4 - Solution
 
 Code python - Find a missing number:  
 
@@ -55,7 +56,7 @@ def findNumber(arr, n):
 
 Complexity: O(n)
 
-## Q5 - Solution
+### Q5 - Solution
 
 Explaination:  
 Idea: We will divide 2 arrays to 2 parts (left part and right part) so that amount of elements on each side are equal or more or less than 1 element.  
@@ -108,7 +109,7 @@ def findMedianSortedArrays(nums1, nums2) -> float:
 
 Complexity: O(log(m+n))  
 
-## Q6 - Solution
+### Q6 - Solution
 
 Explaination: Since the linked list is sorted. We move to the right of the list, and compare the adjacents node. If the adjacents node are same, then remove the second one.  
 ![image](https://user-images.githubusercontent.com/72053908/154193541-8ff2e8f4-f4ee-4856-803f-76356cdfc077.png)
@@ -128,11 +129,12 @@ Explaination: Since the linked list is sorted. We move to the right of the list,
 
 Complexity: O(n)
 
-## Q8 - Solution
+## Mathematical statistics + other question  
+### Q8 - Solution
 
 I think the best graph to use is Normal Distribution Graph. Because this graph can show the detailed information about group of examinees with each range of score.
 
-## Q9 - Solution
+### Q9 - Solution
 
 First, we calculate total of outcomes: 6^3 = 216  
 If the point obtained in the first roll is greater than the sum of the points obtained in the second roll, the point obtained in the first roll must be 6, 5, 4, 3.
