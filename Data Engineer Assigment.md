@@ -6,9 +6,10 @@
 Write an SQL to find the second highest score of athletes:
 
 <pre>
-SELECT *  
-FROM Performance  
-WHERE Score = (Select Max(Score) FROM Performance)
+SELECT *
+FROM Performance
+WHERE Score < (Select Max(Score) FROM Performance) 
+ORDER BY Score DESC LIMIT 1;
 </pre>
 
 ### Q2 - Solution
