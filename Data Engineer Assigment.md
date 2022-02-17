@@ -64,8 +64,8 @@ Idea: We will divide 2 arrays to 2 parts (left part and right part) so that amou
 ![image](https://user-images.githubusercontent.com/72053908/154112397-ed29102c-3fad-435d-85d1-cd1231cd3c8d.png)  
 Aim: Divide 2 arrays until Max1 <= Min2 and Max2 <= Min1 ---> Max(Max1, Max2) <= Min(Min1, Min2) (1)  
          From (1), we will find the median:  
-         If m + n is even number, the median = 0.5*(Max(Max1, Max2) + Min(Min1, Min2)).  
-         If m + n is odd number, the median = Min(Min1, Min2) – In this case we will divide 2 arrays to 2 parts so that amount of elements on the left is 1 element less than on the right.  
+         If M + N is even number, the median = 0.5*(Max(Max1, Max2) + Min(Min1, Min2)).  
+         If M + N is odd number, the median = Min(Min1, Min2) – In this case we will divide 2 arrays to 2 parts so that amount of elements on the left is 1 element less than on the right.  
          If Max1 > Min2, we will decrease i so j will be increased. New index of i will be searched from l to r =  i – 1 by binary search algorithm.     
          If Max2 > Min1, we will increase i so j will be decreased. New index of i will be searched from l = i + 1 to r by binary search algorithm.   
 Some notes when updating i and j:  
