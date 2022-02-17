@@ -104,7 +104,7 @@ def findMedianSortedArrays(nums1, nums2) -> float:
             l = i + 1 
 </pre>
 
-Complexity: O(log(m+n))  
+Complexity: O(log(min(m,n)))  
 
 ### Q6 - Solution
 
